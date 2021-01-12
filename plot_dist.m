@@ -23,7 +23,7 @@ if plot_sub > 0
 end
 
 figure
-trisurf(simp, verts(:,1), verts(:,2), verts(:,3), w)%,'EdgeColor', ec, 'FaceColor', 'interp');
+trisurf(simp, verts(:,1), verts(:,2), verts(:,3), w,'EdgeColor', 'interp', 'FaceColor', 'interp');
 hidden on
 axis square;
 colorbar;

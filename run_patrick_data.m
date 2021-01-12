@@ -1,4 +1,4 @@
-parpool(4)
+parpool(20)
 
 %% Specify experimental parameters for scattering from a rod
 
@@ -7,13 +7,13 @@ R = 33; % A
 % Rod length
 L = 9200; % A
 %Scattering intensity weighting factor
-volfrac=0.00010482;
+volfrac=1.0127E-04;
 dsld=(6.33E-6)-(3.03E-6);
 c = (10.^8).*pi.*R.^2.*L.*volfrac.*(dsld).^2; % cm ^ -1
 %c = ;
 
 % Background scattering intensity
-b = 0.0070174; % cm ^ -1
+b = 0.00689699; % cm ^ -1
 
 files = dir('patrick_data/*.txt');
 
